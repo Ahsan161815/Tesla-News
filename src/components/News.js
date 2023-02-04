@@ -146,7 +146,7 @@ export class News extends Component {
   }
 
   async componentDidMount(){
-    let url = "https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=477740fd925d40febb4fc8c8bf0dc8a7";
+    let url = "https://newsapi.org/v2/everything?q=tesla&sortBy=publishedAt&apiKey=APIKEY";
     let data = await fetch(url);
     let parseData = await data.json();
     console.log(parseData);
